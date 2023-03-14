@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ron's Basketball Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Ron's Basketball Survey</h1>
+    <p id="description">Thanks for the taking the time to answer my survey!</p>
+
+    <form id="survey-form">
+        <div class="form-input">
+            <label id="name-label" for="name" class="question">Your name:</label>
+            <input id="name" type="text" required placeholder="name here">
+        </div>
+        <div class="form-input">
+            <label id="email-label" for="email" class="question">Your email:</label>
+            <input id="email" type="email" required placeholder="your@email.here">
+        </div>
+        <div class="form-input">
+            <label id="number-label" for="number" class="question">Your age:</label>
+            <input id="number" type="number" min="8" max="60" placeholder="19">
+        </div>
+        <div class="form-input">
+            <label for="dropdown" class="question">What's your favorite basketball leauge?</label>
+            <select name="league" id="dropdown">
+                <option value=""><span>Please choose</span></option>
+                <option value="NBA">NBA</option>
+                <option value="euroleague">Euroleague</option>
+            </select>
+        </div>
+        <div class="form-input">
+            <label for="team" class="question">What's your favorite basketball team?</label>
+            <div>
+                <label for="maccabi"><input type="radio" name="teams" id="maccabi" value="maccabi"> Maccabi TLV</label>
+            </div>
+            <div>
+                <label for="lakers"><input type="radio" name="teams" id="lakers" value="lakers"> LA Lakers</label>
+            </div>
+            <div>
+                <label for="celtics"><input type="radio" name="teams" id="celtics" value="celtics"> Boston Celtics</label>
+            </div>
+        </div>
+        <div>
+            <label for="price" class="question">How much are you willing to pay for a ticket to a basketball game?</label>
+            <div>
+                <label for="20"><input type="checkbox" name="tprice" id="20" value="20"> 20$ or less</label>
+            </div>
+            <div>
+                <label for="40"><input type="checkbox" name="tprice" id="40" value="40"> 40$ or less</label>
+            </div>
+            <div>
+                <label for="40+"><input type="checkbox" name="tprice" id="40+" value="40+"> More than 40$</label>
+            </div>
+        </div>
+        <div>
+            <label for="comments" class="question">Do you have anything else to add?</label>
+            <div>
+                <textarea name="comments" id="comments" cols="30" rows="4"></textarea>
+            </div>
+        </div>
+        <div class="bttn">
+            <input id="submit" type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
